@@ -5,7 +5,7 @@ import shutil
 continuer = "oui"
 variables =[]
 fich = str(input("Nom du fichier et de la classe"))
-fich2 =fich +".txt"
+fich2 =fich +".php"
 mon_fichier = open(fich2, "w")
 mon_fichier.write("<?php")
 mon_fichier.write("\n")
