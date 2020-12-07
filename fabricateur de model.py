@@ -4,9 +4,9 @@ import string
 import shutil
 continuer = "oui"
 variables =[]
-fich = str(input("Nom du fichier et de la classe")
-#fich = fich +".txt"
-mon_fichier = open(fich, "w")
+fich = str(input("Nom du fichier et de la classe"))
+fich2 =fich +".txt"
+mon_fichier = open(fich2, "w")
 mon_fichier.write("<?php")
 mon_fichier.write("/n")
 mon_fichier.write("class ")
@@ -76,3 +76,4 @@ for i in range (0,len(variables)):
     mon_fichier.write("/n")
     mon_fichier.write("}")
     mon_fichier.write("/n")
+mon_fichier.close()
