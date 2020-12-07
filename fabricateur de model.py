@@ -5,20 +5,20 @@ import shutil
 continuer = "oui"
 variables =[]
 fich = str(input("Nom du fichier et de la classe")
-fich = fich +".txt"
+#fich = fich +".txt"
+mon_fichier = open(fich, "w")
+mon_fichier.write("<?php")
+mon_fichier.write("/n")
+mon_fichier.write("class ")
+mon_fichier.write("Model_")
+mon_fichier.write(fich)
+mon_fichier.write("/n")
+mon_fichier.write("{")
+mon_fichier.write("/n")
 while(continuer=="oui"):
     gh= str(input("Citer les variables pour la fabrication model"))
     variables.append(gh)
     continuer = str(input("Continuer oui/non"))
-           mon_fichier = open(fich, "w")
-           mon_fichier.write("<?php")
-           mon_fichier.write("/n")
-           mon_fichier.write("class")
-           mon_fichier.write("Model_")
-           mon_fichier.write(fich)
-           mon_fichier.write("/n")
-           mon_fichier.write("{")
-           mon_fichier.write("/n")
 for i in range (0,len(variables)):
     mon_fichier.write("/private $_")
     mon_fichier.write(variables[i])
