@@ -1,0 +1,61 @@
+<?php
+class Model_salut
+{
+/private $_oui;
+/private $_id;
+/private $_pp;
+/private $_nh;
+// Liste des getters
+public function oui()
+{
+  return $this->_oui;
+}
+public function id()
+{
+  return $this->_id;
+}
+public function pp()
+{
+  return $this->_pp;
+}
+public function nh()
+{
+  return $this->_nh;
+}
+// Partie Setter
+public function setoui($oui)
+{
+$oui = (int) $oui;
+
+if ($oui >= 1 && $oui <= 100)
+{
+$this->_oui = $oui;
+}
+}
+public function setid($id)
+{
+$id = (int) $id;
+
+if ($id >= 1 && $id <= 100)
+{
+$this->_id = $id;
+}
+}
+public function setpp($pp)
+{
+$pp = (int) $pp;
+
+if ($pp >= 1 && $pp <= 100)
+{
+$this->_pp = $pp;
+}
+}
+public function setnh($nh)
+{
+$nh = (int) $nh;
+
+if ($nh >= 1 && $nh <= 100)
+{
+$this->_nh = $nh;
+}
+}
