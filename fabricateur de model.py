@@ -66,7 +66,7 @@ for i in range (0,len(variables)):
     mon_fichier.write("\n")
     mon_fichier.write("{")
     mon_fichier.write("\n")
-    mon_fichier.write("$this->_")
+    mon_fichier.write(" $this->_")
     mon_fichier.write(variables[i])
     mon_fichier.write(" = $")
     mon_fichier.write(variables[i])
