@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>Fabricateur de Model</title>
-  
+
 </head>
 <body>
   <h1>Voici un logiciel révolutionnaire, il fabrique des Model à votre guise</h1>
-  <form action="/ma-page-de-traitement" method="post">
+  <form action="ignore/traitement.php" method="post">
     <div>
         <label for="classe">Classe :</label>
         <input type="text" id="classe" name="classe">
