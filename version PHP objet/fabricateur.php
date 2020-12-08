@@ -2,14 +2,15 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Fabricateur de Model</title>
-
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
-  <h1>Voici un logiciel révolutionnaire, il fabrique des Model à votre guise</h1>
-  <form action="ignore/traitement.php" method="post">
+<h1>Voici un fabricateur de Model</h1>
+<form action="ignore/traitement.php" method="post">
     <div>
-        <label for="classe">Classe :</label>
+        <label for="classe">classe:</label>
         <input type="text" id="classe" name="classe">
     </div>
     <div>
@@ -19,7 +20,6 @@
     <div class="button">
         <button name="ok" type="submit">Fabriquer le Model</button>
     </div>
-
 </form>
 </body>
 </html>
