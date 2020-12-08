@@ -8,17 +8,17 @@
   <h1>Voici un logiciel révolutionnaire, il fabrique des Model à votre guise</h1>
   <form action="/ma-page-de-traitement" method="post">
     <div>
-        <label for="name">Nom :</label>
-        <input type="text" id="name" name="user_name">
+        <label for="classe">Classe :</label>
+        <input type="text" id="classe" name="classe">
     </div>
     <div>
-        <label for="mail">e-mail :</label>
-        <input type="email" id="mail" name="user_mail">
+        <label for="attributs">attributs :</label>
+        <input type="text" id="attributs" name="attributs">
     </div>
-    <div>
-        <label for="msg">Message :</label>
-        <textarea id="msg" name="user_message"></textarea>
+    <div class="button">
+        <button name="ok" type="submit">Fabriquer le Model</button>
     </div>
+
 </form>
 </body>
 </html>
