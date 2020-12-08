@@ -9,7 +9,9 @@ class Manager_fabricateur
   public function fabricateur($classe,$attributs)
   {
 
-      $bdd
+      $att =  explode ( string ";" , string $attributs ) : array
+      $classe_attributs = [$classe,$att]
+      return $classe_attributs;
 
 }
 
