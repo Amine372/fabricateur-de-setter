@@ -20,7 +20,7 @@ while(continuer=="oui"):
     variables.append(gh)
     continuer = str(input("Continuer oui/non"))
 for i in range (0,len(variables)):
-    mon_fichier.write("/private $_")
+    mon_fichier.write("private $_")
     mon_fichier.write(variables[i])
     mon_fichier.write(";")
     mon_fichier.write("\n")
