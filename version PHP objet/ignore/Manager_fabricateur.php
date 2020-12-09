@@ -22,9 +22,10 @@ class Manager_fabricateur
       }
       public function fabricateur_fichier($classe)
       {
-        $classe = $classe + ".php";
+        $nom_classe = $classe + ".php";
         $res = fopen($classe, 'w');
         fclose($res);
+        return $classe_attributs;
       }
       public function ecriture_primaire($classe)
       {
@@ -41,6 +42,7 @@ class Manager_fabricateur
         public function declaration_attributs($classe,$classe_attributs)
         {
           $cases_tableau = count($classe_attributs);
+          $res = fopen("fichier.txt", "a+");
           for ($i = 1; $i <= $cases_tableau; $i++)
           {
             echo $i;
