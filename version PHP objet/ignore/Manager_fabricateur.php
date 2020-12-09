@@ -10,7 +10,7 @@ class Manager_fabricateur
     transformation($classe,$attributs);
     fabricateur_fichier($classe);
     ecriture_primaire($classe);
-    declaration_attributs();
+    declaration_attributs($classe,$classe_attributs);
 
   }
     public function transformation($classe,$attributs)
@@ -38,11 +38,9 @@ class Manager_fabricateur
         fwrite($res,"\n");
         fclose($res);
         }
-        public function fabricateur_fichier($classe)
+        public function declaration_attributs($classe,$classe_attributs)
         {
-          $classe = $classe + ".php";
-          $res = fopen($classe, 'w');
-          fclose($res);
+          $cases_tableau = count($classe_attributs)
         }
 
 }
