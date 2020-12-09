@@ -21,7 +21,7 @@ class Manager_fabricateur
       public function fichier()
       {
 
-          $res = fopen('test.txt', 'rb');
+          $res = fopen('test.txt', 'w');
         }
 
 }
