@@ -40,7 +40,11 @@ class Manager_fabricateur
         }
         public function declaration_attributs($classe,$classe_attributs)
         {
-          $cases_tableau = count($classe_attributs)
+          $cases_tableau = count($classe_attributs);
+          for ($i = 1; $i <= 10; $i++)
+          {
+    echo $i;
+}
         }
 
 }
