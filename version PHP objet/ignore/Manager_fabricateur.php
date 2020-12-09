@@ -36,8 +36,8 @@ class Manager_fabricateur
     fwrite($res,$classe);
     fwrite($res,"\n");
     fwrite($res,"{");
-      fwrite($res,"\n");
-      fclose($res);
+    fwrite($res,"\n");
+    fclose($res);
     }
     public function declaration_attributs($classe,$classe_attributs,$nom_classe)
     {
