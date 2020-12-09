@@ -27,9 +27,9 @@ class Manager_fabricateur
         }
       public function ecriture_primaire()
       {
-        $file = fopen("fichier.txt", "a");
-      fwrite($file,"Mon texte");
-fclose($file);
+        $res = fopen("fichier.txt", "a+");
+        fwrite($res,"Mon texte");
+        fclose($res);
         }
 
 }
