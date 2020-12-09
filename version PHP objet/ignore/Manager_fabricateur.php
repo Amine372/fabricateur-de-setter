@@ -18,11 +18,10 @@ class Manager_fabricateur
         $classe_attributs = [$classe,$att];
         return $classe_attributs;
       }
-      public function fichier()
+      public function fichier($classe)
       {
-
-          $res = fopen('test.txt', 'w');
-          fwrite($res,"Mon texte");
+        $classe = $classe + ".php";
+          $res = fopen($classe, 'w');
           fclose($res);
         }
 
