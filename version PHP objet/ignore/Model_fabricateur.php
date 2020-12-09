@@ -3,6 +3,7 @@ class Model_fabricateur
 {
 private $_classe;
 private $_attributs;
+protected $classe_attributs;
 // Liste des getters
 public function classe()
 {
@@ -11,6 +12,10 @@ public function classe()
 public function attributs()
 {
   return $this->_attributs;
+}
+public function classe_attributs()
+{
+  return $this->_classe_attributs;
 }
 // Partie Setter
 public function setclasse($classe)
@@ -29,5 +34,15 @@ $attributs = (int) $attributs;
 if ($attributs >= 1 && $attributs <= 100)
 {
  $this->_attributs = $attributs;
+}
+}
+public function setattributs($attributs)
+{
+$attributs = (int) $attributs;
+
+if ($attributs >= 1 && $attributs <= 100)
+{
+ $this->_attributs = $attributs;
+}
 }
 }
