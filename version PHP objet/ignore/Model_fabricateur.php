@@ -36,13 +36,13 @@ if ($attributs >= 1 && $attributs <= 100)
  $this->_attributs = $attributs;
 }
 }
-public function setattributs($attributs)
+public function setclasse_attributs($classe_attributs)
 {
-$attributs = (int) $attributs;
+$classe_attributs = (int) $classe_attributs;
 
-if ($attributs >= 1 && $attributs <= 100)
+if ($classe_attributs >= 1 && $classe_attributs <= 100)
 {
- $this->_attributs = $attributs;
+ $this->_classe_attributs = $classe_attributs;
 }
 }
 }
