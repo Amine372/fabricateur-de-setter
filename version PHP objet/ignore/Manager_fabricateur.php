@@ -9,7 +9,8 @@ class Manager_fabricateur
   {
     transformation($classe,$attributs);
     fabricateur_fichier($classe);
-    ecriture_primaire($classe,$classe_attributs);
+    ecriture_primaire($classe);
+    declaration_attributs();
 
   }
     public function transformation($classe,$attributs)
@@ -24,8 +25,8 @@ class Manager_fabricateur
         $classe = $classe + ".php";
         $res = fopen($classe, 'w');
         fclose($res);
-        }
-      public function ecriture_primaire($classe,$classe_attributs)
+      }
+      public function ecriture_primaire($classe)
       {
         $res = fopen("fichier.txt", "a+");
         fwrite($res,"<?php");
@@ -36,6 +37,12 @@ class Manager_fabricateur
         fwrite($res,"{");
         fwrite($res,"\n");
         fclose($res);
+        }
+        public function fabricateur_fichier($classe)
+        {
+          $classe = $classe + ".php";
+          $res = fopen($classe, 'w');
+          fclose($res);
         }
 
 }
