@@ -18,6 +18,14 @@ class Manager_fabricateur
         $classe_attributs = [$classe,$att];
         return $classe_attributs;
       }
+      public function fichier()
+      {
+
+          $att =  explode ( string ";" , string $attributs ) : array;
+          $classe_attributs = [$classe,$att];
+          return $classe_attributs;
+        }
 
 }
  ?>
+$res = fopen('test.txt', 'rb');
