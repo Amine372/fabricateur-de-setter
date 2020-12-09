@@ -22,8 +22,8 @@ class Manager_fabricateur
       {
 
           $res = fopen('test.txt', 'w');
-          fwrite($file,"Mon texte");
-          fclose($file);
+          fwrite($res,"Mon texte");
+          fclose($res);
         }
 
 }
