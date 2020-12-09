@@ -13,43 +13,43 @@ class Manager_fabricateur
     declaration_attributs($classe,$classe_attributs,$nom_classe);
 
   }
-    public function transformation($classe,$attributs)
+  public function transformation($classe,$attributs)
+  {
+
+    $att =  explode ( string " " , string $attributs ) : array;
+    $classe_attributs = [$classe,$att];
+    return $classe_attributs;
+  }
+  public function fabricateur_fichier($classe)
+  {
+    $nom_classe = $classe + ".php";
+    $res = fopen($classe, 'w');
+    fclose($res);
+    return $nom_classe;
+  }
+  public function ecriture_primaire($classe,$nom_classe)
+  {
+    $res = fopen($nom_classe, "a+");
+    fwrite($res,"<?php");
+    fwrite($res,"\n");
+    fwrite($res,"class Model_");
+    fwrite($res,$classe);
+    fwrite($res,"\n");
+    fwrite($res,"{");
+      fwrite($res,"\n");
+      fclose($res);
+    }
+    public function declaration_attributs($classe,$classe_attributs,$nom_classe)
     {
-
-        $att =  explode ( string " " , string $attributs ) : array;
-        $classe_attributs = [$classe,$att];
-        return $classe_attributs;
-      }
-      public function fabricateur_fichier($classe)
+      $cases_tableau = count($classe_attributs);
+      $res = fopen($nom_classe, "a+");
+      for ($i = 1; $i <= $cases_tableau; $i++)
       {
-        $nom_classe = $classe + ".php";
-        $res = fopen($classe, 'w');
-        fclose($res);
-        return $nom_classe;
+        fwrite($res,'protected $_');
+        fwrite($res,"\n");
       }
-      public function ecriture_primaire($classe,$nom_classe)
-      {
-        $res = fopen($nom_classe, "a+");
-        fwrite($res,"<?php");
-        fwrite($res,"\n");
-        fwrite($res,"class Model_");
-        fwrite($res,$classe);
-        fwrite($res,"\n");
-        fwrite($res,"{");
-        fwrite($res,"\n");
-        fclose($res);
-        }
-        public function declaration_attributs($classe,$classe_attributs,$nom_classe)
-        {
-          $cases_tableau = count($classe_attributs);
-          $res = fopen($nom_classe, "a+");
-          for ($i = 1; $i <= $cases_tableau; $i++)
-          {
-            fwrite($res,'protected $_');
-            fwrite($res,"\n");
-          }
-          fclose($res);
-        }
+      fclose($res);
+    }
 
-}
- ?>
+  }
+  ?>
