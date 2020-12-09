@@ -1,3 +1,3 @@
 <?php
-$res = fopen('test.txt', 'rb');
+$res = fopen('test.txt', 'w');
 ?>
