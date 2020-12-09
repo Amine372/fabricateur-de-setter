@@ -8,7 +8,8 @@ class Manager_fabricateur
   public function fabricateur($classe,$attributs)
   {
     transformation($classe,$attributs);
-    fichier($classe);
+    fabricateur_fichier($classe);
+    ecriture_primaire();
 
   }
     public function transformation($classe,$attributs)
@@ -18,12 +19,18 @@ class Manager_fabricateur
         $classe_attributs = [$classe,$att];
         return $classe_attributs;
       }
-      public function fichier($classe)
+      public function fabricateur_fichier($classe)
       {
         $classe = $classe + ".php";
         $res = fopen($classe, 'w');
         fclose($res);
         }
+        public function fabricateur_fichier($classe)
+        {
+          $classe = $classe + ".php";
+          $res = fopen($classe, 'w');
+          fclose($res);
+          }
 
 }
  ?>
