@@ -9,7 +9,7 @@ class Manager_fabricateur
   {
     transformation($classe,$attributs);
     fabricateur_fichier($classe);
-    ecriture_primaire();
+    ecriture_primaire($classe,$classe_attributs);
 
   }
     public function transformation($classe,$attributs)
@@ -25,11 +25,12 @@ class Manager_fabricateur
         $res = fopen($classe, 'w');
         fclose($res);
         }
-      public function ecriture_primaire()
+      public function ecriture_primaire($classe,$classe_attributs)
       {
         $res = fopen("fichier.txt", "a+");
         fwrite($res,"<?php");
         fwrite($res,"\n");
+        fwrite($res,"class Model_");
         fwrite($res,"class Model_");
         fclose($res);
         }
