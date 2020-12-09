@@ -25,12 +25,12 @@ class Manager_fabricateur
         $res = fopen($classe, 'w');
         fclose($res);
         }
-        public function fabricateur_fichier($classe)
-        {
-          $classe = $classe + ".php";
-          $res = fopen($classe, 'w');
-          fclose($res);
-          }
+      public function fabricateur_fichier($classe)
+      {
+        $classe = $classe + ".php";
+        $res = fopen($classe, 'w');
+        fclose($res);
+        }
 
 }
  ?>
