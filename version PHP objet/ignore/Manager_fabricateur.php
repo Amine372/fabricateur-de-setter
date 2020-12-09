@@ -31,7 +31,10 @@ class Manager_fabricateur
         fwrite($res,"<?php");
         fwrite($res,"\n");
         fwrite($res,"class Model_");
-        fwrite($res,"class Model_");
+        fwrite($res,$classe);
+        fwrite($res,"\n");
+        fwrite($res,"{");
+        fwrite($res,"\n");
         fclose($res);
         }
 
