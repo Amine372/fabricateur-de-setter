@@ -25,11 +25,11 @@ class Manager_fabricateur
         $res = fopen($classe, 'w');
         fclose($res);
         }
-      public function fabricateur_fichier($classe)
+      public function ecriture_primaire()
       {
-        $classe = $classe + ".php";
-        $res = fopen($classe, 'w');
-        fclose($res);
+        $file = fopen("fichier.txt", "a");
+      fwrite($file,"Mon texte");
+fclose($file);
         }
 
 }
