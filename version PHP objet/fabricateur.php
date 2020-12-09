@@ -7,19 +7,19 @@
   <script src="script.js"></script>
 </head>
 <body>
-<h1>Voici un fabricateur de Model</h1>
-<form action="ignore/traitement.php" method="post">
+  <h1>Voici un fabricateur de Model</h1>
+  <form action="ignore/traitement.php" method="post">
     <div>
-        <label for="classe">classe:</label>
-        <input type="text" id="classe" name="classe">
+      <label for="classe">classe:</label>
+      <input type="text" id="classe" name="classe">
     </div>
     <div>
-        <label for="attributs">attributs :</label>
-        <input type="text" id="attributs" name="attributs">
+      <label for="attributs">attributs :</label>
+      <input type="text" id="attributs" name="attributs">
     </div>
     <div class="button">
-        <button name="ok" type="submit">Fabriquer le Model</button>
+      <button name="ok" type="submit">Fabriquer le Model</button>
     </div>
-</form>
+  </form>
 </body>
 </html>
